@@ -23,3 +23,8 @@ When the loading is done, initialize the swipebrowsing for your pagelist, and sp
 			pageList.swipeBrowsing(viewport);
 		});
 	</pre>
+	
+## License
+
+Licensed under the MIT:
+http://www.opensource.org/licenses/mit-license.php
