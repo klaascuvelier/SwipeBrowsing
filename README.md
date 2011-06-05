@@ -24,6 +24,10 @@ When the loading is done, initialize the swipebrowsing for your pagelist, and sp
 		});
 	</pre>
 	
+swipeBrowsing has an optional parameter for a callback function, which is called when the visible page has changed
+	
+For more information, look at the examples
+
 ## License
 
 Licensed under the MIT:
