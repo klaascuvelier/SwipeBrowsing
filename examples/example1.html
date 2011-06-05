@@ -1,0 +1,74 @@
+<html>
+	<head>
+		<title>Swipe Browsing</title>
+		<style>
+		* { margin: 0; padding: 0 }
+		html, body {
+			width: 100%;
+			height: 100%;
+			background: #eee;
+			}
+
+		div#pages {
+			background: #fff;
+			position: absolute;
+			overflow-x: hidden;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			}
+
+		#pages ul {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: 9999px;
+			}
+
+			#pages ul li {
+				width: 100%;
+				height:100%;
+				float: left;
+				}
+		</style>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+		<script src="../swipebrowsing.js"></script>
+	</head>
+
+	<body>
+		<div id="pages">
+			<ul>
+				<li class="page">
+					<h1>Page1</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vitae tellus dui. Fusce laoreet posuere nunc, sit amet tristique lacus iaculis at. Nunc placerat facilisis velit, sit amet commodo eros convallis a. Aenean congue metus id turpis aliquam nec lobortis augue sollicitudin. Phasellus ac elit eros. Duis at leo a nunc mattis lobortis vel eu mauris. Aliquam arcu dolor, molestie id venenatis in, faucibus et neque. Morbi posuere dignissim sodales. Suspendisse potenti. Sed facilisis mattis nisi, in cursus metus posuere sed. Nam eros sapien, egestas sit amet scelerisque non, ultricies a est. Duis ultricies nisl nec diam sollicitudin mattis.</p>
+					<p>Morbi leo metus, rutrum vestibulum ullamcorper non, tristique sed lectus. Donec id ligula vitae arcu hendrerit lobortis. Donec faucibus faucibus tortor non pellentesque. Fusce tincidunt turpis ut dui convallis vel blandit diam scelerisque. Vestibulum in pretium enim. Nam tortor diam, ultrices ac sodales sed, varius eu tortor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent ac nibh enim. Suspendisse potenti. Curabitur in mi quis libero scelerisque vestibulum. Etiam ac ante quis dui blandit vulputate eget vitae orci. Etiam euismod convallis massa. Aenean sit amet sapien id dui interdum consequat nec ac tellus. Ut ultricies mi a ligula convallis nec facilisis quam varius. Vivamus erat ligula, facilisis eu congue non, fringilla sit amet ligula. Quisque facilisis, nisi eu adipiscing porta, diam risus fringilla mauris, nec consequat enim augue ut est. Quisque ut venenatis metus. Integer aliquam dictum sem. Sed neque neque, porttitor sit amet egestas et, mattis sit amet leo.</p>
+					<p>Aenean consequat elementum hendrerit. Curabitur congue ultrices sem a consectetur. Curabitur tristique consectetur urna, nec congue nibh condimentum sed. Phasellus consectetur arcu et mi pharetra iaculis. Morbi tincidunt laoreet pretium. Proin varius molestie massa, sed rutrum metus auctor et. Suspendisse pellentesque scelerisque lectus, eget vulputate quam consectetur quis. Etiam euismod arcu ante. Nunc tempor eros id urna imperdiet pellentesque. Aenean tortor magna, aliquam eget vestibulum blandit, cursus vitae dolor. Integer interdum justo eget sapien sagittis blandit eget a justo. Duis tempus ipsum in diam hendrerit suscipit. In id libero non diam tempor gravida eu vitae ante. Donec laoreet felis vitae ipsum lacinia in venenatis mi scelerisque. Nam eget nunc quis turpis placerat gravida. Duis id elit ut erat vulputate rutrum.</p>
+					<p>Vestibulum auctor volutpat massa, eget sagittis massa dapibus id. Vestibulum congue, libero sit amet tristique sagittis, libero libero scelerisque sem, et pulvinar mi mauris eget augue. Nullam in metus vitae dui luctus interdum. Pellentesque orci diam, hendrerit eget volutpat pretium, facilisis et urna. Morbi quam libero, fringilla eget sollicitudin id, elementum sed elit. Aliquam erat volutpat. Duis porttitor euismod tellus, ut posuere lacus porttitor id. Morbi id odio id ipsum dignissim cursus ut eu tellus. Nullam fermentum ultricies cursus. Praesent augue neque, egestas ac facilisis euismod, auctor vitae urna. Sed varius tincidunt ligula eu tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed urna nulla, malesuada sit amet mattis eget, aliquam id ipsum. Integer eu metus elit. Cras eget metus sed nulla sodales ultricies eget in elit. Nullam pulvinar pretium sapien sit amet aliquam. Nulla facilisi. Sed a tristique risus. Nam imperdiet justo quis tortor fermentum scelerisque.</p>
+					<p>Donec congue tincidunt mi, eu ornare sapien tristique quis. Fusce eu neque et odio condimentum molestie at non lacus. Etiam interdum mauris ut turpis eleifend in sollicitudin urna posuere. Praesent sit amet blandit mi. Pellentesque lectus lacus, cursus sit amet pharetra ac, posuere vel metus. Sed mauris nunc, pretium id commodo sed, tempor iaculis leo. Sed cursus orci sit amet risus suscipit mollis. Cras ornare mi eu mi aliquet vulputate. Donec eget porta est. Pellentesque eu augue sit amet lorem faucibus varius. Mauris commodo elementum mattis. Nulla feugiat convallis justo, in lobortis velit fringilla molestie. Sed condimentum ullamcorper nisl, sit amet aliquam dui ultricies nec. Etiam sed ipsum eget ante facilisis posuere. Pellentesque tellus metus, ultrices nec pulvinar id, porta in nisl. Sed ut diam nisl, nec aliquam magna. Suspendisse potenti. Aliquam erat volutpat. Praesent pellentesque, enim eget congue lacinia, leo est imperdiet turpis, in hendrerit eros nibh non nibh.</p>
+				</li>
+				<li class="page">
+					<h1>Page2</h1>
+				</li>
+				<li class="page">
+					<h1>Page3</h1>
+				</li>
+				<li class="page">
+					<h1>Page4</h1>
+				</li>
+			</ul>
+		</div>
+
+		<script>
+		$('document').ready(function ()
+		{
+			var viewport = $('#pages');
+			var pageList = viewport.find('ul');
+
+			pageList.find('li').width(viewport.width());
+			pageList.swipeBrowsing(viewport);
+		});
+		</script>
+	</body>
+</html>
