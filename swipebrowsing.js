@@ -15,6 +15,11 @@
  * Copyright (c) 2011, Klaas Cuvelier
  */
 $.fn.extend({
+	/**
+	 * Initialize swipe navigation for item
+	 * @param viewport 				container where the visible page is displayed
+	 * @param pageChangeCallback 	callback called when swipe is done
+	 */
 	swipeBrowsing: function (viewport, pageChangeCallback) 
 	{
 		var touchEnabled = document.hasOwnProperty('ontouchend');
@@ -104,5 +109,22 @@ $.fn.extend({
 		
 		viewport
 			.bind('mouseout', onTouchEnd);
+	},
+	
+	/**
+	 * Swipe to specific page
+	 * @param page		the page (li) where you want to go to
+	 * @param viewport	the container where the visible page is displayed in
+	 * @param pageChangeCallback 	callback called when swipe is done
+	 */
+	swipeTo: function (page, viewport, pageChangeCallback) 
+	{
+		var left = viewport.offset()['left'] - (page.index() * page.width());
+		page.parent().animate({left: left}, 200, function (e) {
+			if (typeof pageChangeCallback === 'function')
+			{
+				pageChangeCallback.call(page.get(0), e);
+			}
+		});
 	}
 });
